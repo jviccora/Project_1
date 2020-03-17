@@ -5,7 +5,7 @@ var url = new URL(
 );
 
 let params = {
-    "symbol": "SNAP,TWTR,VOD.L",
+    "symbol": "SNAP",
     "api_token": "j1OSOs2MNhy0kx3NISNHhhm2GrKrKhuSu5nVtG8PlwImQf4BThjeyMVeWPqJ",
 };
 Object.keys(params)
