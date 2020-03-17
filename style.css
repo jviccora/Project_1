@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #505562;
@@ -18,8 +22,35 @@ body {
 .header {
     background-color: #2d2d37;
     text-align: center;
+    padding: 1.75rem;
 }
 
 .header h1 {
     font-size: 2.25rem;
+}
+
+.date {
+    background-color: #222222;
+    text-align: right;
+    font-size: .75rem;
+    padding: .75rem 2rem .75rem 0;
+}
+
+ul.currencies {
+    height: 500px;
+    background-color: #222222;
+}
+
+.add-currencies-btn {
+    background-color: blue;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-top: 3px solid #222222;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color .25s;
 }
