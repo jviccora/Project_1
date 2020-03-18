@@ -15,42 +15,56 @@ body {
 }
 
 .container {
-    width: 500px;
-    margin: 20px auto;
+    width: 250px;
+    margin: 10px auto;
+    border-radius: 12px;
 }
 
 .header {
-    background-color: #2d2d37;
+    background-color: #f3f3f5;
     text-align: center;
     padding: 1.75rem;
+    border: .5px solid #b9bbc2;
+    border-bottom: .5px;
 }
 
 .header h1 {
     font-size: 2.25rem;
+    color: #505562;
 }
 
 .date {
-    background-color: #222222;
+    background-color: #ddd9d9;
     text-align: right;
     font-size: .75rem;
     padding: .75rem 2rem .75rem 0;
+    border: .5px solid #b9bbc2;
 }
 
 ul.currencies {
-    height: 500px;
-    background-color: #222222;
+    height: 250px;
+    background-color: #ffffff;
+    border: .5px solid #b9bbc2;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
-.add-currencies-btn {
-    background-color: blue;
+.add-currency-btn {
+    background-color: rgb(10, 10, 87);
     color: #ffffff;
     padding: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    font-weight: lighter;
     border: none;
-    border-top: 3px solid #222222;
+    border-radius: 12px;
     outline: none;
     width: 100%;
     cursor: pointer;
     transition: background-color .25s;
+    transition-duration: .4s;
+}
+
+.add-currency-btn:hover {
+    background-color: rgb(60, 60, 146);
+    color: white;
 }
