@@ -49,7 +49,7 @@ ul.currencies {
     border-bottom-right-radius: 4px;
 }
 
-.add-currency-btn {
+.add-currencies-btn {
     background-color: rgb(10, 10, 87);
     color: #ffffff;
     padding: 1rem;
@@ -64,7 +64,7 @@ ul.currencies {
     transition-duration: .4s;
 }
 
-.add-currency-btn:hover {
+.add-currencies-btn:hover {
     background-color: rgb(60, 60, 146);
     color: white;
 }
