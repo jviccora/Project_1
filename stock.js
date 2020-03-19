@@ -22,13 +22,19 @@ Object.keys(params)
 fetch(url)
     .then(response => response.json())
     .then(json => {
-        var tr = document.createElement("<tr>");
-        var td = document.createElement("<td>");
+        // var tr = document.createElement("tr");
+        // var newTR = document.querySelector("tbody").tr;
+        // var td = document.createElement("td");
         var stockSymbol = json.data[0].symbol;
         document.querySelector("#td1").innerHTML = stockSymbol;
         var stockName = json.data[0].name;
         document.querySelector("#td2").innerHTML = stockName;
-        var stock52high = json.data[0].52_week_high;
+        var stockPrice = json.data[0].price;
+        document.querySelector("#td3").innerHTML = stockPrice;
+        var stockDayChange = json.data[0].day_change;
+        document.querySelector("#td4").innerHTML = stockDayChange;
+        var stockYesterdayClosing = json.data[0].close_yesterday;
+        document.querySelector("#td5").innerHTML = stockYesterdayClosing;
         console.log(json);
         
     });
