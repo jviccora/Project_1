@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
 
 
     <title>Finance Glance</title>
     <link rel="stylesheet" href="style.css">
-      <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
 </head>
@@ -23,37 +23,176 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">CNN <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Fox News</a>
-            </li>
-            <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                More
-              </a>
-              <div class="dropdown-menu align-items-end " aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Forbes</a>
-                <a class="dropdown-item" href="#">Bloomberg</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
 
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/yahoonews.html">Yahoo News <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fox News</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav nav ml-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Forbes</a>
+                        <a class="dropdown-item" href="#">Bloomberg</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+
+            <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form> -->
         </div>
-      </nav>
-    
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>Currency Converter</h1>
+        </div>
+        <div class="date">2020-03-16</div>
+        <ul class="currencies">
+            <li class="currency base-currency" id="USD">
+                <img src="http://www.geonames.org/flags/l/us.gif" alt="" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#36;</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">USD - US Dollar</p>
+                    <p class="base-currency-rate">1 USD = 1 USD</p>
+
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="JPY">
+                <img src="http://www.geonames.org/flags/l/jp.gif" alt="" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#165;</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">JPY - Japanese Yen</p>
+                    <p class="base-currency-rate">1 USD = 111.0401 JPY</p>
+
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="GPB">
+                <img src="http://www.geonames.org/flags/l/uk.gif" alt="" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#163;</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">GPB - British Pound</p>
+                    <p class="base-currency-rate">1 USD = .7805 GPB</p>
+
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="RUB">
+                <img src="http://www.geonames.org/flags/l/ru.gif" alt="" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#8381;</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">RUB - Russian Ruble</p>
+                    <p class="base-currency-rate">1 USD = 66.9615 RUB</p>
+
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="CNY">
+                <img src="http://www.geonames.org/flags/l/cn.gif" alt="" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#165;</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">CNY - Chinese Yuan Renminbi</p>
+                    <p class="base-currency-rate">1 USD = 6.7756 CNY</p>
+
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="INR">
+                <img src="http://www.geonames.org/flags/l/in.gif" alt="" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#8377;</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">INR - Indian Rupee</p>
+                    <p class="base-currency-rate">1 USD = 71.177 INR</p>
+
+                </div>
+                <span class="close">&times;</span>
+            </li>
+            <li class="currency" id="EUR">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png" alt="" class="flag">
+                <div class="info">
+                    <p class="input"><span class="currency-symbol">&#8364;</span><input placeholder="0.0000"></p>
+                    <p class="currency-name">EUR - Euro</p>
+                    <p class="base-currency-rate">1 USD = .8875 EUR</p>
+
+                </div>
+                <span class="close">&times;</span>
+            </li>
+
+
+        </ul>
+        <ul class="add-currency-list"></ul>
+        <button class="add-currencies-btn">Add Currency</button>
+    </div>
 
     <script src="currency.js"></script>
     <script src="bitcoin.js"></script>
+
+
+    <!-- For Bea -->
+
+    <div class="container" id="stock">
+        <div class="card">
+            <div class="card-header">
+                Search for Stock Information
+            </div>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="stock-input" value="" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Symbol to Search">
+                </div>
+                <a href="#" class="btn btn-secondary mb-3" id="stock-search">Display Stock Information</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Symbol</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price &emsp;</th>
+                            <th scope="col">Today's Change</th>
+                            <th scope="col">At Close Yesterday</th>
+                            <!-- <th scope="col"></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="td1"></td>
+                            <td id="td2"></td>
+                            <td id="td3"></td>
+                            <td id="td4"></td>
+                            <td id="td5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="stock.js"></script>
+
+    <!-- For Shaminder -->
+
+
+    <div class="container" id="cryto"></div>
+
+    <!-- For Muss -->
+
+    <div class="container" id="mews"></div>
+
 
 </body>
 
