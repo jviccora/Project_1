@@ -16,12 +16,12 @@
 </head>
 
 <body>
-<!-- hello  -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,7 +37,8 @@
             <ul class="navbar-nav nav ml-auto">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle  " href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -122,7 +123,8 @@
                 <span class="close">&times;</span>
             </li>
             <li class="currency" id="EUR">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png" alt="" class="flag">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
+                    alt="" class="flag">
                 <div class="info">
                     <p class="input"><span class="currency-symbol">&#8364;</span><input placeholder="0.0000"></p>
                     <p class="currency-name">EUR - Euro</p>
@@ -151,7 +153,8 @@
             </div>
             <div class="card-body">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="stock-input" value="" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Symbol to Search">
+                    <input type="text" class="form-control" id="stock-input" value="" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" placeholder="Enter Symbol to Search">
                 </div>
                 <a href="#" class="btn btn-secondary mb-3" id="stock-search">Display Stock Information</a>
                 <table class="table">
@@ -186,8 +189,46 @@
 
     <!-- For Shaminder -->
 
-
-    <div class="container" id="cryto"></div>
+    <div class="container" style="background-color: green;" id="crypto">
+        <!-- name of display section -->
+        <div class="header" style="background-color:seagreen;">
+            <h1 style="color: seashell;">Coin Ticker</h1>
+            <!-- beginning of bootsrap layout -->
+            <div class="card">
+                <div class="card-header">
+                    Crypto Currency Chart
+                </div>
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                    </div>
+                    <a href="#" class="btn btn-secondary mb-3" id="stock-search">Display Coin Information</a>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Currency</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Market Cap &emsp;</th>
+                                <th scope="col">Today's Change</th>
+                                <th scope="col">At Close Yesterday</th>
+                                <!-- <th scope="col"></th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="td1"></td>
+                                <td id="td2"></td>
+                                <td id="td3"></td>
+                                <td id="td4"></td>
+                                <td id="td5"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- For Muss -->
 
