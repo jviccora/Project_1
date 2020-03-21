@@ -20,21 +20,32 @@ function stockSearch() {
 
     fetch(url)
         .then(response => response.json())
-        .then(json => {
-            // var tr = document.createElement("tr");
-            // var newTR = document.querySelector("tbody").tr;
-            // var td = document.createElement("td");
+        .then(json => { 
+            var stockTable = document.querySelector("#stock-table");
+            var newRow = stockTable.insertRow(-1);
+            var newStockSymbolCell = newRow.insertCell(0);
+            var newStockNameCell = newRow.insertCell(1);
+            var newStockPriceCell = newRow.insertCell(2);
+            var newStockDayChangeCell = newRow.insertCell(3);
+            var newStockYesterdayClosingCell = newRow.insertCell(4);
+      
             var stockSymbol = json.data[0].symbol;
-            document.querySelector("#td1").innerHTML = stockSymbol;
+            var symbol = document.createTextNode(stockSymbol);
+            newStockSymbolCell.appendChild(symbol);
             var stockName = json.data[0].name;
-            document.querySelector("#td2").innerHTML = stockName;
+            var name = document.createTextNode(stockName);
+            newStockNameCell.appendChild(name);
             var stockPrice = json.data[0].price;
-            document.querySelector("#td3").innerHTML = stockPrice;
+            var stockPriceText = document.createTextNode(stockPrice);
+            newStockPriceCell.appendChild(stockPriceText);
             var stockDayChange = json.data[0].day_change;
-            document.querySelector("#td4").innerHTML = stockDayChange;
+            var stockDayChangeText = document.createTextNode(stockDayChange);
+            newStockDayChangeCell.appendChild(stockDayChangeText);
             var stockYesterdayClosing = json.data[0].close_yesterday;
-            document.querySelector("#td5").innerHTML = stockYesterdayClosing;
+            var stockClosingText = document.createTextNode(stockYesterdayClosing);
+            newStockYesterdayClosingCell.appendChild(stockClosingText);
             console.log(json);
+            
         });
 };
 stockBtn.addEventListener("click", stockSearch);
