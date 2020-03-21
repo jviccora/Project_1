@@ -1,5 +1,3 @@
-// variable declaration
-// var userInput = document.querySelector("#stock-input").value;
 var stockBtn = document.querySelector("#stock-search");
 var apiKey = "j1OSOs2MNhy0kx3NISNHhhm2GrKrKhuSu5nVtG8PlwImQf4BThjeyMVeWPqJ";
 
@@ -12,12 +10,10 @@ function stockSearch() {
     var userInput = document.querySelector("#stock-input").value;
     let params = {
         "symbol": userInput,
-        //"symbol": "SNAP",
         "api_token": apiKey,
     };
     Object.keys(params)
         .forEach(key => url.searchParams.append(key, params[key]));
-
     fetch(url)
         .then(response => response.json())
         .then(json => { 
@@ -44,10 +40,7 @@ function stockSearch() {
             var stockYesterdayClosing = json.data[0].close_yesterday;
             var stockClosingText = document.createTextNode(stockYesterdayClosing);
             newStockYesterdayClosingCell.appendChild(stockClosingText);
-            console.log(json);
-            
+            console.log(json);     
         });
 };
 stockBtn.addEventListener("click", stockSearch);
-
-// display appropriate data in table
