@@ -112,44 +112,45 @@
 
     <!-- For Shaminder -->
 
-    <div class="container" style="background-color: green;" id="crypto">
+    <div class="container" id="crypto">
         <!-- name of display section -->
-        <div class="header" style="background-color:seagreen;">
-            <h1 style="color: seashell;">Coin Ticker</h1>
-            <!-- beginning of bootsrap layout -->
-            <div class="card">
-                <div class="card-header">
-                    Crypto Currency Chart
+        <div class="header">
+            <h1>Coin Ticker</h1>
+        </div>
+        <!-- beginning of bootsrap layout -->
+        <div class="card">
+            <div class="card-header">
+                Crypto Currency Chart
+            </div>
+            <div class="card-body">
+                <div class="input-group mb-3">
                 </div>
-                <div class="card-body">
-                    <div class="input-group mb-3">
-                    </div>
-                    <a href="#" class="btn btn-secondary mb-3" id="stock-search">Display Coin Information</a>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Currency</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Market Cap &emsp;</th>
-                                <th scope="col">Today's Change</th>
-                                <th scope="col">At Close Yesterday</th>
-                                <!-- <th scope="col"></th> -->
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="td1"></td>
-                                <td id="td2"></td>
-                                <td id="td3"></td>
-                                <td id="td4"></td>
-                                <td id="td5"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search">
-                </div>
+                <a href="#" class="btn btn-secondary mb-3" id="stock-search">Display Coin Information</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Currency</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Market Cap &emsp;</th>
+                            <th scope="col">Today's Change</th>
+                            <th scope="col">At Close Yesterday</th>
+                            <!-- <th scope="col"></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="td1"></td>
+                            <td id="td2"></td>
+                            <td id="td3"></td>
+                            <td id="td4"></td>
+                            <td id="td5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search">
             </div>
         </div>
+
     </div>
     <script src="bitcoin.js"></script>
 
@@ -159,6 +160,6 @@
 
 
 </body>
-<footer>for now i am the walrus2</footer>
+<div class="footer">
 
 </html>
