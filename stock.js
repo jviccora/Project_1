@@ -37,8 +37,6 @@ function stockSearch() {
             var stockYesterdayClosing = json.data[0].close_yesterday;
             document.querySelector("#td5").innerHTML = stockYesterdayClosing;
             console.log(json);
->>>>>>> cfac3938ced0fe075100991349c3bdc1c1913676
-
         });
 };
 stockBtn.addEventListener("click", stockSearch);
