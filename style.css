@@ -109,15 +109,16 @@ ul.currencies li.base-currency {
     margin-bottom: 0.75rem;
 }
 
+
 .add-currencies-btn {
     background-color: rgb(10, 10, 87);
 }
+
 
 .add-currency-btn {
     background-color: blue;
     color: #ffffff;
 }
-
 .info .currency-name {
     font-size: 1rem;
     font-weight: bold;
@@ -143,7 +144,6 @@ ul.currencies li .close {
 ul.currencies li .close:hover {
     color: #fff;
 }
-
 
 /* Scrollbar */
 
@@ -229,7 +229,6 @@ ul.add-currency-list li span {
     background-color: rgb(60, 60, 146);
     color: white;
 }
-
 .add-currency-btn i {
     position: absolute;
     top: 0.6rem;
