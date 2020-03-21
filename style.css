@@ -108,8 +108,13 @@ ul.currencies li.base-currency {
     margin-bottom: 0.75rem;
 }
 
+<<<<<<< Updated upstream
 .add-currencies-btn {
     background-color: rgb(10, 10, 87);
+=======
+.add-currency-btn {
+    background-color: blue;
+>>>>>>> Stashed changes
     color: #ffffff;
 }
 
