@@ -43,26 +43,12 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/forbes.html">Forbes</a>
                         <a class="dropdown-item" href="#">Bloomberg</a>
-                   
+
                     </div>
                 </li>
             </ul>
-
-
-            <!-- container for Joe!-->
         </div>
     </nav>
-    <div class="container">
-        <div class="header">
-            <h1>Currency Converter</h1>
-        </div>
-        <div class="date"></div>
-        <ul class="currencies"></ul>
-        <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
-        <ul class="add-currency-list"></ul>
-    </div>
-
-    <script src="currency.js"></script>
 
 
 
@@ -72,15 +58,15 @@
 
     <div class="container" id="stock">
         <div class="card">
-            <div class="card-header text-center">
-                Search for Current Stock Information
+            <div class="card-header">
+                <h1> Stock Search</h1>
             </div>
             <div class="card-body">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" id="stock-input" value="" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Symbol to Search">
                 </div>
                 <a href="#" class="btn" id="stock-search">Display Stock Information</a>
-                 <table class="table" id="stock-table">
+                <table class="table" id="stock-table">
                     <thead>
                         <tr>
                             <th scope="col">Symbol &emsp;</th>
@@ -103,9 +89,6 @@
                 </table>
             </div>
         </div>
-
-
-
 
     </div>
     <script src="stock.js"></script>
@@ -160,6 +143,17 @@
 
 
 </body>
+<div class="container">
+    <div class="header">
+        <h1>Currency Converter</h1>
+    </div>
+    <div class="date"></div>
+    <ul class="currencies"></ul>
+    <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
+    <ul class="add-currency-list"></ul>
+</div>
+
+<script src="currency.js"></script>
 <div class="footer">
 
 </html>
