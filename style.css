@@ -109,6 +109,12 @@ ul.currencies li.base-currency {
     margin-bottom: 0.75rem;
 }
 
+
+.add-currencies-btn {
+    background-color: rgb(10, 10, 87);
+}
+
+
 .add-currency-btn {
     background-color: blue;
     color: #ffffff;
