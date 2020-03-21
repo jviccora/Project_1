@@ -33,6 +33,7 @@ body {
 .footer {
     background-color: #b9bbc2;
     height: 30px;
+    border-top: 1px solid #cfcfd4;
 }
 
 .header h1 {
@@ -47,7 +48,6 @@ body {
 }
 
 ul.currencies {
-    height: 500px;
     background-color: #ffffff;
     border: .5px solid #b9bbc2;
     border-bottom-left-radius: 4px;
@@ -117,6 +117,7 @@ ul.currencies li.base-currency {
     background-color: blue;
     color: #ffffff;
 }
+
 .info .currency-name {
     font-size: 1rem;
     font-weight: bold;
@@ -142,6 +143,7 @@ ul.currencies li .close {
 ul.currencies li .close:hover {
     color: #fff;
 }
+
 
 /* Scrollbar */
 
@@ -227,6 +229,7 @@ ul.add-currency-list li span {
     background-color: rgb(60, 60, 146);
     color: white;
 }
+
 .add-currency-btn i {
     position: absolute;
     top: 0.6rem;
