@@ -116,3 +116,21 @@ ul.currencies li.base-currency {
     background-color: rgb(60, 60, 146);
     color: white;
 }
+#stock-search {
+    background-color: rgb(10, 10, 87);
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color .25s;
+    transition-duration: .4s;
+}
+#stock-search:hover {
+    background-color: rgb(60, 60, 146);
+    color: white;
+}

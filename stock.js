@@ -6,7 +6,7 @@ var apiKey = "j1OSOs2MNhy0kx3NISNHhhm2GrKrKhuSu5nVtG8PlwImQf4BThjeyMVeWPqJ";
 // AJAX and queryURL from api documentation at https://www.worldtradingdata.com/documentation?javascript#stock-and-index-real-time
 
  function stockSearch() {
-    
+    event.preventDefault();
 const url = new URL(
     "https://api.worldtradingdata.com/api/v1/stock"
 );
