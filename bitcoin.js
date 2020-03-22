@@ -25,7 +25,7 @@ for (let index = 0; index < coinArr.length; index++) {
 	}
 
 	$.ajax(settings).then(function (response) {
-		// console.log(response);
+		console.log(response);
 	//Variables that I need from the API
 	// debugger
 		var coinNameApi = response.coin_name;
@@ -55,10 +55,11 @@ for (let index = 0; index < coinArr.length; index++) {
 		// find a way to dynamically set the name to a var
 		// append the response to each td tag
 		//
-
+$("#otherCoins").on("change", function(event){
+	event.preventDefault();
+console.log("test");
+});
 	})
-
-
 	}
 
 

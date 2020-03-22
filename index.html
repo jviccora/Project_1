@@ -149,8 +149,6 @@
     </div>
 
     <script src="currency.js"></script>
-    <script src="bitcoin.js"></script>
-
 
     <!-- For Bea -->
 
@@ -233,8 +231,15 @@
                             </td>
                         </tbody>
                     </table>
-                    <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search">
+                    <!-- <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search"> -->
+                        <select class="chosen-select" id="otherCoins">
+                            <option value="EOS">EOS</option>
+                            <option value="ETC">Ethereum Classic</option>
+                            <option value="LTC">Litecoin</option>
+                            <option value="TRX">TRON</option>
+                            <option value="DASH">Dash</option>
+                            <option value="PAX">Paxos Standard Token</option></select>
                     <br>
                     <button class="btn btn-secondary mb-3" id="coinSearch">Display Coin Information</button>
                 </div>
@@ -247,7 +252,7 @@
 
     <div class="container" id="mews"></div>
 
-
+    <script src="bitcoin.js"></script>
 </body>
 
 </html>
