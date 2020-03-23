@@ -95,117 +95,74 @@
 
     <!-- For Shaminder -->
 
-    <div class="container" id="crypto">
-        <!-- name of display section -->
+
+
+
+    <div class="container">
         <div class="header">
-            <h1>Coin Ticker</h1>
-            <!-- beginning of bootsrap layout -->
-            <div class="card">
-                <div class="card-header">
-                    Crypto Currency Chart
-                </div>
-                <div class="card-body">
-                    <div class="input-group mb-3">
-                    </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Currency</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Last Price</th>
-                                <th scope="col">Change (24hr)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- bitcoin row  BTC-->
-                            <td scope="col">
-                                <p id="currencyNameCol"></p>
-                            </td>
-                            <td scope="col">
-                                <p id="coinPriceCol"> </p>
-                            </td>
-                            <td scope="col">
-                                <p id="lastPriceCol"></p>
-                            </td>
-                            <td scope="col">
-                                <p id="dailyChangeCol"></p>
-                            </td>
-                        </tbody>
-                    </table>
-                    <!-- <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search"> -->
-                        <select class="chosen-select" id="otherCoins">
-                            <option value="EOS">EOS</option>
-                            <option value="ETC">Ethereum Classic</option>
-                            <option value="LTC">Litecoin</option>
-                            <option value="TRX">TRON</option>
-                            <option value="DASH">Dash</option>
-                            <option value="PAX">Paxos Standard Token</option></select>
-                    <br>
-                    <button class="btn btn-secondary mb-3" id="coinSearch">Display Coin Information</button>
+            <h1>Currency Converter</h1>
+        </div>
+        <div class="date"></div>
+        <ul class="currencies"></ul>
+        <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
+        <ul class="add-currency-list"></ul>
+    </div>
+
+    <script src="currency.js"></script>
 
 
     <div class="container" id="crypto">
         <!-- name of display section -->
         <div class="header">
-            <h1>Coin Ticker</h1>
+            <h1>Coin Value Search</h1>
         </div>
         <!-- beginning of bootsrap layout -->
         <div class="card">
-            <div class="card-header">
-                Crypto Currency Chart
-            </div>
+
             <div class="card-body">
+                <form id="search" class="container container-fluid form-group">
+                    <label for="crypto-input">Search for a Cryptocurrency</label>
+                    <input type="text" id="crypto-input" placeholder="BTC, ETH, LTC, etc..." />
+                    <br>
+
+                </form>
+                <br>
+
                 <div class="input-group mb-3">
 
                 </div>
-                <a href="#" class="btn btn-secondary mb-3" id="stock-search">Display Coin Information</a>
-                <table class="table">
+                <table class="table" id="stock-table">
                     <thead>
                         <tr>
-                            <th scope="col">Currency</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Market Cap &emsp;</th>
-                            <th scope="col">Today's Change</th>
-                            <th scope="col">At Close Yesterday</th>
+                            <th scope="col">Price in USD &emsp;</th>
+
                             <!-- <th scope="col"></th> -->
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="td1"></td>
-                            <td id="td2"></td>
-                            <td id="td3"></td>
-                            <td id="td4"></td>
-                            <td id="td5"></td>
+                            <td id="td1">
+                                <div id="crypto-output"></div>
+                            </td>
+
                         </tr>
-                    </tbody>
-                </table>
-                <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search">
+                        <div class="button_holder">
+                            <input id="search-crypto" type="submit" value="Search Cryptocurrency" class="btn btn-primary" />
+                        </div>
+                        <br>
+
             </div>
         </div>
 
     </div>
-    <script src="bitcoin.js"></script>
-
-
-    <!-- For Muss -->
-
-    <div class="container" id="mews"></div>
-
-    <script src="bitcoin.js"></script>
-</body>
-<div class="container">
-    <div class="header">
-        <h1>Currency Converter</h1>
     </div>
-    <div class="date"></div>
-    <ul class="currencies"></ul>
-    <button class="add-currency-btn"><i class="fas fa-long-arrow-alt-left"></i>Add Currency</button>
-    <ul class="add-currency-list"></ul>
-</div>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="crypto.js"></script>
 
-<script src="currency.js"></script>
-<div class="footer">
+
+
+</body>
+
+
 
 </html>
