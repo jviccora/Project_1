@@ -99,6 +99,56 @@
         <!-- name of display section -->
         <div class="header">
             <h1>Coin Ticker</h1>
+            <!-- beginning of bootsrap layout -->
+            <div class="card">
+                <div class="card-header">
+                    Crypto Currency Chart
+                </div>
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Currency</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Last Price</th>
+                                <th scope="col">Change (24hr)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- bitcoin row  BTC-->
+                            <td scope="col">
+                                <p id="currencyNameCol"></p>
+                            </td>
+                            <td scope="col">
+                                <p id="coinPriceCol"> </p>
+                            </td>
+                            <td scope="col">
+                                <p id="lastPriceCol"></p>
+                            </td>
+                            <td scope="col">
+                                <p id="dailyChangeCol"></p>
+                            </td>
+                        </tbody>
+                    </table>
+                    <!-- <input type="text" class="form-control" id="coin-input" value="" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" placeholder="Enter Coin to Search"> -->
+                        <select class="chosen-select" id="otherCoins">
+                            <option value="EOS">EOS</option>
+                            <option value="ETC">Ethereum Classic</option>
+                            <option value="LTC">Litecoin</option>
+                            <option value="TRX">TRON</option>
+                            <option value="DASH">Dash</option>
+                            <option value="PAX">Paxos Standard Token</option></select>
+                    <br>
+                    <button class="btn btn-secondary mb-3" id="coinSearch">Display Coin Information</button>
+
+
+    <div class="container" id="crypto">
+        <!-- name of display section -->
+        <div class="header">
+            <h1>Coin Ticker</h1>
         </div>
         <!-- beginning of bootsrap layout -->
         <div class="card">
@@ -107,6 +157,7 @@
             </div>
             <div class="card-body">
                 <div class="input-group mb-3">
+
                 </div>
                 <a href="#" class="btn btn-secondary mb-3" id="stock-search">Display Coin Information</a>
                 <table class="table">
@@ -137,11 +188,12 @@
     </div>
     <script src="bitcoin.js"></script>
 
+
     <!-- For Muss -->
 
     <div class="container" id="mews"></div>
 
-
+    <script src="bitcoin.js"></script>
 </body>
 <div class="container">
     <div class="header">
