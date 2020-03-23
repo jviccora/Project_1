@@ -225,7 +225,8 @@ ul.add-currency-list li span {
     font-size: 1.4rem;
     font-weight: lighter;
     border: none;
-    border-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 12px;
     outline: none;
     width: 100%;
     cursor: pointer;
